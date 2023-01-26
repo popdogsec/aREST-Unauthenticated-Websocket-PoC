@@ -1,5 +1,5 @@
 # aREST-Unauthenticated-Websocket-PoC
-# NOTE: This vulnerability no longer exists and has been patched out
+# NOTE: This vulnerability no longer exists and has been patched out. If you have an outdated version (before Dec. 2019) please make sure you upgrade.
 aREST is a framework for making homebrew IoT devices on boards such as Raspberry Pi's and arduinos. I first heard about aREST from a popular infosec youtuber in February 2019 and began tinkering with it on an ESP8266 shortly there after. At the end of March 2019 after trying to investigate how the API key system worked I identified a vulnerability in the aREST framework. 
 
 At sign up you were given a 6 digit code or could choose one yourself. In a way this acts as the username for interacting with your IoT device. The API key acted like the password part of the authentication. At the time the aREST framework worked in 2 options for how to interact with the device if you were utilizing an API key. The first way was to use a URL crafted to do send the command. An example would look like this:
